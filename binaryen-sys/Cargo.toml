@@ -18,8 +18,8 @@ exclude = [
 cmake = "0.1.25"
 cc = "1.0.4"
 regex = "1"
-heck = "0.3"
+heck = "0.5.0"
 
 [dev-dependencies]
-bindgen = "0.52.0"
+bindgen = "0.70.1"
 diff = "0.1"

@@ -1,4 +1,4 @@
-use heck::CamelCase;
+use heck::ToLowerCamelCase;
 use regex::Regex;
 use std::env;
 use std::fs;
@@ -23,7 +23,7 @@ fn read_passes() -> Vec<Pass> {
         let description = caps.get(2).unwrap().as_str().replace("\"", "");
 
         passes.push(Pass {
-            id: name.to_camel_case(),
+            id: name.to_lower_camel_case(),
             name: name.to_string(),
             description: description.to_string(),
         });
